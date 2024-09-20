@@ -1,0 +1,6 @@
+ai_edge_torch
+monai
+torch
+torchvision
+numpy<2.0.0
+tflite-runtime

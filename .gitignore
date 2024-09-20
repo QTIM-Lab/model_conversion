@@ -1,0 +1,45 @@
+# Byte-compiled files
+__pycache__/
+*.pyc
+
+# Virtual environment
+executorch_venv/
+tflite_venv/
+executorch/
+venv/
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# IDE or editor files
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Environment variables file
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Model files
+*.pt
+# *.pth
+*.pte
+*.tflite
+
+# Eggs
+*.egg*
+
+# Testing
+.mypy_cache
+.pytest_cache
+.tox
+.coverage
+
+# Output files
+*/cmake-out/

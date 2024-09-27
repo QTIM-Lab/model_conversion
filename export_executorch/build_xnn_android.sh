@@ -19,6 +19,7 @@ cmake ../executorch -DCMAKE_INSTALL_PREFIX=cmake-android-out \
 cmake --build cmake-android-out -j16 --target install
 
 # Build the android extension
+# Path may be different...
 cmake extension/android \
   -DCMAKE_TOOLCHAIN_FILE="${ANDROID_NDK}"/build/cmake/android.toolchain.cmake \
   -DANDROID_ABI="${ANDROID_ABI}" \

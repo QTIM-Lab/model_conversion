@@ -28,7 +28,7 @@ Thumbs.db
 
 # Model files
 *.pt
-# *.pth
+*.pth
 *.pte
 *.tflite
 
@@ -43,3 +43,14 @@ Thumbs.db
 
 # Output files
 */cmake-out/
+
+# Personal dev
+dev/
+
+### Exceptions
+
+# Model 36 as backup
+!best_metric_model.pth
+
+# Example .pte quantized
+!export_executorch_quantized/model_threesix_quantized.pte

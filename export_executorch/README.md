@@ -39,7 +39,7 @@ git submodule update --init
 # Return to original repo because need requirements on our end
 cd ..
 
-pip install -r requirements.txt
+pip install -r requirements_executorch.txt
 ```
 
 ### Step 3. Use python to export the file as Executorch program

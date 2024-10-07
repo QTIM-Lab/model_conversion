@@ -63,7 +63,7 @@ adb --version
 
 Now that we have the model, we need to be able to run it
 
-I wrote a bash script. Run it from the executorch folder:
+I wrote a bash script. Run it from this export_executorch_vulkan folder:
 
 First build and install:
 

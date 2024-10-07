@@ -43,6 +43,7 @@ Thumbs.db
 
 # Output files
 */cmake-out/
+*/cmake-android-out/
 
 # Personal dev
 dev/

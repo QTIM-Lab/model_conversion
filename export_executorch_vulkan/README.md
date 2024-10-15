@@ -78,7 +78,7 @@ Next, you must have device visible to adb. For instance, if you run:
 
 ```sh
 # Check if devices are present
-adb device
+adb devices
 ```
 
 You should see at least one device. For instance if I have Android Studio running and have some emulator (say Pixel 7 on x86_64 or whatever), then that will work
@@ -93,6 +93,15 @@ adb push cmake-android-out/backends/vulkan/vulkan_executor_runner /data/local/tm
 
 # Run the model
 adb shell /data/local/tmp/runner_bin --model_path /data/local/tmp/model_threesix_vulkan.pte
+
+
+# AGAIN:
+adb push mobilenet_vulkan_tiny.pte /data/local/tmp/mobilenet_vulkan_tiny.pte
+# Push binary to device
+adb push cmake-android-out-arm/backends/vulkan/vulkan_executor_runner /data/local/tmp/runner_bin
+
+# Run the model
+adb shell /data/local/tmp/runner_bin --model_path /data/local/tmp/mobilenet_vulkan_tiny.pte
 ```
 
 You should see: Output 0: tensor(sizes=[1, 3], [-2.49069, 1.39235, 0.966965])

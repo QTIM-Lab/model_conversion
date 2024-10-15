@@ -5,6 +5,7 @@ __pycache__/
 # Virtual environment
 executorch_venv/
 tflite_venv/
+venv_tflite/
 executorch/
 venv/
 env/
@@ -32,6 +33,9 @@ Thumbs.db
 *.pte
 *.tflite
 
+# APKs
+*.apk
+
 # Eggs
 *.egg*
 
@@ -43,7 +47,7 @@ Thumbs.db
 
 # Output files
 */cmake-out/
-*/cmake-android-out/
+*/cmake-android-out*
 
 # Personal dev
 dev/
